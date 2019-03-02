@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MyKotlinApp</string>
+    <string name="app_name">WeatherApp</string>
     <string name="weather_forecast">Weather Forecast</string>
 </resources>
