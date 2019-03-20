@@ -1,4 +1,4 @@
-# AndroidWorkManager
+# BlurMyImage
 Example of background work for blurring image in android using WorkManager.
 
 ## What is WorkManager ?
@@ -7,4 +7,4 @@ WorkManager is part of Android Jetpack and an Architecture Component for backgro
 https://codelabs.developers.google.com/codelabs/android-workmanager/
 
 ## App Screenshots
-<img src="Screenshots/AndroidWorkManager-1.png" width="250"> <img src="Screenshots/AndroidWorkManager-2.png" width="250"> <img src="Screenshots/AndroidWorkManager-3.png" width="250"> <img src="Screenshots/AndroidWorkManager-4.png" width="250">
+<img src="Screenshots/BlurMyImage-1.png" width="250"> <img src="Screenshots/BlurMyImage-2.png" width="250"> <img src="Screenshots/BlurMyImage-3.png" width="250"> <img src="Screenshots/BlurMyImage-4.png" width="250">
