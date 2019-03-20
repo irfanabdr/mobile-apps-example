@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyWorkRequest</string>
+    <string name="enqueue_work">Enqueue Work</string>
+    <string name="empty_schedule">Please input schedule first !</string>
+    <string name="schedule_in">Schedule work in …</string>
+    <string name="minutes">minute(s)</string>
+    <string name="work_in_queue">Work in Queue …</string>
+</resources>
