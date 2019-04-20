@@ -1,6 +1,7 @@
 # MobileComputing
 Mobile Computing II Task
 
-- WeatherApp (Android Networking)
-- BlurMyImage (Android Background Work)
-- MyWorkRequest (Android Background Work)
+- WeatherApp (Networking)
+- BlurMyImage (Background Work I)
+- MyWorkRequest (Background Work II)
+- BandungWeather (Fragment, Background Work, Notification)
