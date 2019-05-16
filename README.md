@@ -5,3 +5,4 @@ Mobile Computing II Task
 - BlurMyImage (Background Work I)
 - MyWorkRequest (Background Work II)
 - BandungWeather (Fragment, Background Work, Notification)
+- MyAlbum (React Native)
