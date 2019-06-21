@@ -6,3 +6,4 @@ Mobile Computing II Task
 - MyWorkRequest (Background Work II)
 - BandungWeather (Fragment, Background Work, Notification)
 - MyAlbum (React Native)
+- RandomUser (Final Task)
