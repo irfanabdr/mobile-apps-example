@@ -1,39 +1,27 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
-import Onboarding from 'react-native-onboarding-swiper';
+import React from "react";
+import { AppLoading } from "expo";
+import * as Font from "expo-font";
+import OnboardingScreen from "./src/screens/OnboardingScreen";
 
-export default function App() {
-  return (
-    <Onboarding
-    pages={[
-      {
-        backgroundColor: '#0091ea',
-        image: <Image source={require('./assets/user-random.png')} />,
-        title: 'Random User',
-        subtitle: 'Explore random user anytime you want',
-      },
-      {
-        backgroundColor: '#0091ea',
-        image: <Image source={require('./assets/user-edit.png')} />,
-        title: 'Edit User',
-        subtitle: 'Edit specific user and save it to firebase',
-      },
-      {
-        backgroundColor: '#0091ea',
-        image: <Image source={require('./assets/notification.png')} />,
-        title: 'Push Notification',
-        subtitle: "Feeling lonely? relax there is notification for you",
-      },
-    ]}
-  />
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { initialLoading: true };
+  }
+
+  async componentWillMount() {
+    await Font.loadAsync({
+      Roboto: require("native-base/Fonts/Roboto.ttf"),
+      Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf")
+    });
+    this.setState({ initialLoading: false });
+  }
+
+  render() {
+    if (this.state.initialLoading) {
+      return <AppLoading />;
+    }
+
+    return <OnboardingScreen />;
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

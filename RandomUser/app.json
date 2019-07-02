@@ -25,6 +25,12 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+
+    "androidStatusBarColor": "#0064b7",
+    "android": {
+      "package": "com.irfan.randomuser",
+      "googleServicesFile": "./google-services.json"
     }
   }
 }
