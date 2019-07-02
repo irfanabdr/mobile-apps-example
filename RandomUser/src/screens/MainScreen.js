@@ -1,5 +1,5 @@
 import React from "react";
-import { FlatList, View, StyleSheet } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
 import {
   Container,
   Header,
@@ -14,7 +14,7 @@ import {
   Thumbnail,
   ListItem
 } from "native-base";
-import Menu, { MenuItem, MenuDivider } from "react-native-material-menu";
+import Menu, { MenuItem } from "react-native-material-menu";
 import { createAppContainer, createStackNavigator } from "react-navigation";
 import axios from "axios";
 
