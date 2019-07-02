@@ -10,11 +10,11 @@ import {
   Button,
   Icon,
   Body,
+  Card,
   Text,
-  Thumbnail,
-  ListItem
+  Thumbnail
 } from "native-base";
-import Menu, { MenuItem, MenuDivider } from "react-native-material-menu";
+import Menu, { MenuItem } from "react-native-material-menu";
 import { createAppContainer, createStackNavigator } from "react-navigation";
 import axios from "axios";
 
@@ -96,22 +96,28 @@ class MainScreen extends React.Component {
       <FlatList
         data={this.state.users}
         renderItem={({ item }) => (
-          <ListItem avatar onPress={() => this._actionToEdit(item)}>
-            <Left>
-              <Thumbnail source={{ uri: item.picture.thumbnail }} />
-            </Left>
-            <Body>
-              <Text>
-                {item.name.title + " " + item.name.first + " " + item.name.last}
+          <Card>
+            <View style={styles.container}>
+              <Thumbnail large source={{ uri: item.picture.thumbnail }} />
+              <Text style={styles.name}>
+                {item.name.title +
+                  " " +
+                  item.name.first +
+                  " " +
+                  item.name.last}
               </Text>
-              <Text note>{item.phone}</Text>
-            </Body>
-            <Right>
-              <Button transparent onPress={() => this._actionToEdit(item)}>
-                <Icon type="Feather" name="chevron-right" />
+              <Text style={styles.phone}>{item.phone}</Text>
+              <Button
+                transparent
+                style={styles.edit}
+                onPress={() =>
+                  this.props.navigation.navigate("Edit", { user: item })
+                }
+              >
+                <Icon name="create" />
               </Button>
-            </Right>
-          </ListItem>
+            </View>
+          </Card>
         )}
         keyExtractor={(item, index) => index.toString()}
       />
@@ -190,6 +196,20 @@ const styles = StyleSheet.create({
     color: "grey", 
     fontSize: 15, 
     textAlign: "center"
+  },
+  container: {
+    alignItems: "center",
+    paddingTop: 10
+  },
+  name: {
+    marginTop: 10,
+    fontWeight: "600"
+  },
+  phone: {
+    color: "grey"
+  },
+  edit: {
+    alignSelf: "flex-end"
   }
 });
 
