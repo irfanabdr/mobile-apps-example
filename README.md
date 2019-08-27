@@ -1,5 +1,5 @@
 # MobileComputing
-Mobile Computing II Task
+Android native using kotlin and react native example projects
 
 - WeatherApp (Networking)
 - BlurMyImage (Background Work I)
