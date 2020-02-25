@@ -1,4 +1,4 @@
-# MobileComputing
+# Mobile Apps Example
 Android native using kotlin and react native example projects
 
 - WeatherApp (Android Networking)
