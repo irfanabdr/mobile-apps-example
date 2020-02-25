@@ -1,9 +1,9 @@
 # MobileComputing
 Android native using kotlin and react native example projects
 
-- WeatherApp (Networking)
-- BlurMyImage (Background Work I)
-- MyWorkRequest (Background Work II)
-- BandungWeather (Fragment, Background Work, Notification)
+- WeatherApp (Android Networking)
+- BlurMyImage (Android Background Work I)
+- MyWorkRequest (Android Background Work II)
+- BandungWeather (Android Fragment, Background Work, Notification)
 - MyAlbum (React Native)
-- RandomUser (Final Task)
+- RandomUser (React Native & Firebase)
